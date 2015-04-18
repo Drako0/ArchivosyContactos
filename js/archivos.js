@@ -23,6 +23,9 @@ var archivos = {
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, archivos.accesoSistema, archivos.error);
         sa.root.getFile('practica.txt', null, archivos.accesoFile, archivos.error);
     },
+    accesoSistema: function(sa){
+        sa.root.getFile('practica.txt',null,archivos.accesoFile,archivos.error);
+    },
     accesoFile: function(ea){
         ea.file(archivos.lector, archivos.error);    
     },
