@@ -20,8 +20,7 @@ var archivos = {
         navigator.notification.alert('Error: '+err.code,null,'Archivos', '¿Ya qué?');
     },
     leer: function(sa){
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, archivos.accesoSistema, archivos.error);
-        sa.root.getFile('practica.txt', null, archivos.accesoFile, archivos.error);
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, archivos.accesoSistema, archivos.error);        
     },
     accesoSistema: function(sa){
         sa.root.getFile('practica.txt',null,archivos.accesoFile,archivos.error);
