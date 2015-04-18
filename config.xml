@@ -23,6 +23,6 @@
         </author>
         
         <gap:plugin name="org.apache.cordova.file" />
-        
+        <gap:plugin name="org.apache.cordova.contacts" />
 
     </widget>
